@@ -9,7 +9,7 @@ services:
                 ports:
                         - 3306:3306
                 volumes:
-                        - db-data:/lib/www/mysql
+                        - db-data:/var/lib/mysql
         apache:
                 container_name: my_apache
                 build:
@@ -23,7 +23,7 @@ services:
                 volumes:
                         - .:/var/www/html
         admin:
-                container_name: phpmyadmin
+                container_name: phpmyadmin 
                 image: phpmyadmin
                 restart: always
                 ports:
