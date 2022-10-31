@@ -4,8 +4,8 @@
         echo 'первое посещение';
     }
         else {
-            $_SESSION['time']++;
+            echo time() - $_SESSION['time'];
         } 
-   echo $_SESSION['time'] = time();
+  $_SESSION['time'] = time(); 
 ?>
     
