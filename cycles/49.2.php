@@ -3,6 +3,6 @@
     => 32, 'user3' => 33];
 	
 	foreach ($arr as $key => $elem) {
-		echo $key.'-'.$elem. '<br>';
+		echo $key.'- возраст '.$elem.' лет'.'<br>';
 	}
 ?>
