@@ -4,15 +4,14 @@
 int str_count(char a[], char b[]) {
     int count = 0;
     char *t = a;
-    while ((t = t = strstr (t, b)) !=NULL){
+    while ((t=  strstr(a ,b)) != NULL) {
         count++;
         t++;
-    }
-    return count;
 }
-
+ return count;
+} 
 int main() {
     int count = str_count("Hello", "a");
-    printf("%d\n", count)
+    printf("%d\n", count);
     return 0;
 }
